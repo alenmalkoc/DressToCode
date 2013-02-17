@@ -1,3 +1,13 @@
 .container
   .panel.span24
     Test App - Johnson
+
+    %a.btn{"data-toggle" => "modal", :href => "#popup", :role => "button"} Popup
+
+
+
+#popup.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-body
+    %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+    %p(style="height:250px") Picture here
+    %button.btn.btn-warning Buy it
