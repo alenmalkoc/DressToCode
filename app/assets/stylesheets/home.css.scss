@@ -129,81 +129,22 @@ a{color:#369}.text-shadow,#hd .logo ul,#hd
 
 #masonry{
    position:relative;
-   margin:0 auto
 }
 
 .item{
 	width:220px;
 	float:left;
 	padding:1px 1px 0;
-	margin:0 7px 15px;
+	margin:0 7px 25px;
 	font-size:12px;
-	background:white;
-	-moz-box-shadow:0 1px 3px rgba(34,25,25,0.4);
-	-webkit-box-shadow:0 1px 3px rgba(34,25,25,0.4);
-	-o-box-shadow:0 1px 3px rgba(34,25,25,0.4);
-	box-shadow:0 1px 3px rgba(34,25,25,0.4);
-	line-height:1.5}
-
-.item h2{
-   padding-top:5px
+   background:#fff;
+   @include box-shadow(0 1px 3px rgba(34,25,25,0.4));
 }
 
 .label{
-	color:#8c7e7e;
-	padding-left:15px;
-	padding-bottom:15px;
+   color:#8c7e7e;
+   padding:15px;
+   font-weight:normal;
+   background:#fff;
 }
-
-.item .chat{
-   background:#f2f0f0;
-   margin:0 -15px
-}
-
-.item .chatbox{
-   border-top:1px solid white;
-   border-bottom:1px solid rgba(0,0,0,0.1);
-   padding:15px 15px;
-   padding-left:50px;*zoom:1
-}
-
-.item .chatbox:after{
-   content:"";display:table;clear:both
-}
-
-.item .chatbox:last-child{
-   border-bottom:none
-}
-
-.item .chatbox:first-child{
-   color:#b29c9c
-}
-
-.item .chatbox:first-child b{
-   color:#8c7e7e
-}
-
-.item .chatbox .flickrbombWrapper img{
-   margin:0
-}
-
-.item .chatbox .flickrbombWrapper,.item .chatbox img{
-   margin-left:-35px;
-   float:left
-}
-
-.item .chatbox b{
-   font-weight:bold
-}
-
-
-
-
-
-
-
-
-
-
-
 
