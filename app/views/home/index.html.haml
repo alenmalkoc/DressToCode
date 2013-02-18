@@ -1,13 +1,106 @@
+%a.btn{"data-toggle" => "modal", :href => "#popup", :role => "button"} Popup
+
+%header#hd
+  .topline
+  .logo
+    .container(align="center")
+      = image_tag('logo.png')
+      .logo_menu
+        %ul
+          %li Login
+          %li Signup
+          %li Developers
+  %nav
+    .container
+      %ul
+        %li Casual
+        %li Business Casual
+        %li Formal
+        %li browse all
 .container
-  .panel.span24
-    Test App - Johnson
-
-    %a.btn{"data-toggle" => "modal", :href => "#popup", :role => "button"} Popup
-
+  #bd
+    .container
+      #masonry.masonry{:style => "position: relative; height: 9904px; "}
+        .item.masonry-brick{:style => "position: absolute; top: 0px; left: 0px; "}
+          %img{:alt => "", :height => "352px", :src => "img/ball", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Ball Gown
+        .item.masonry-brick{:style => "position: absolute; top: 0px; left: 236px; "}
+          %img{:alt => "", :height => "322px", :src => "img/Beachwear.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Beach Wear
+        .item.masonry-brick{:style => "position: absolute; top: 0px; left: 472px; "}
+          %img{:alt => "", :height => "312px", :src => "img/casual.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Business Casual
+        .item.masonry-brick{:style => "position: absolute; top: 0px; left: 708px; "}
+          %img{:alt => "", :height => "384px", :src => "img/Businessman.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Business Formal
+        .item.masonry-brick{:style => "position: absolute; top: 0px; left: 944px; "}
+          %img{:alt => "", :height => "423px", :src => "img/Dressy.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Dressy
+        .item.masonry-brick{:style => "position: absolute; top: 400px; left: 0px; "}
+          %img{:alt => "", :height => "369px", :src => "img/Hawaiian.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Hawaiian
+        .item.masonry-brick{:style => "position: absolute; top: 470px; left: 708px; "}
+          %img{:alt => "", :height => "367px", :src => "img/kpop.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            K Pop
+        .item.masonry-brick{:style => "position: absolute; top: 502px; left: 472px; "}
+          %img{:alt => "", :height => "408px", :src => "img/sail.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Sail Casual
+        .item.masonry-brick{:style => "position: absolute; top: 568px; left: 944px; "}
+          %img{:alt => "", :height => "369px", :src => "img/womenscasual.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Women's Casual
+        .item.masonry-brick{:style => "position: absolute; top: 600px; left: 236px; "}
+          %img{:alt => "", :height => "319px", :src => "img/Workout.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Sporty / Workout
+        .item.masonry-brick{:style => "position: absolute; top: 808px; left: 0px; "}
+          %img{:alt => "", :height => "352px", :src => "img/ball", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Ball Gown
+        .item.masonry-brick{:style => "position: absolute; top: 938px; left: 708px; "}
+          %img{:alt => "", :height => "384px", :src => "img/Businessman.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Business Formal
+        .item.masonry-brick{:style => "position: absolute; top: 1080px; left: 236px; "}
+          %img{:alt => "", :height => "423px", :src => "img/Dressy.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Dress
+        .item.masonry-brick{:style => "position: absolute; top: 1198px; left: 0px; "}
+          %img{:alt => "", :height => "369px", :src => "img/Hawaiian.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Hawaiian
+        .item.masonry-brick{:style => "position: absolute; top: 1288px; left: 708px; "}
+          %img{:alt => "", :height => "322px", :src => "img/Beachwear.jpg", :width => "220px"}/
+          %h2.lipsum
+          .label
+            Beach Wear
+#tc_container{:data => "fc", :style => "display: none"}
 
 
 #popup.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
-  .modal-body
-    %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
-    %p(style="height:250px") Picture here
-    %button.btn.btn-warning Buy it
+.modal-body
+%button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+%p(style="height:250px") Picture here
+%button.btn.btn-warning Buy it
