@@ -25,7 +25,7 @@
 #bd
   .container#content  
     .item(style="position: absolute; top: 0px; left: 0px;")
-      = image_tag('k_pop.jpg')         
+      = link_to image_tag('k_pop.jpg'), "#popup", html_options = { "data-toggle" => "modal"}         
     .item(style="position: absolute; top: 0px; left: 242px;")
       = image_tag('hawaiian_wear.jpg')
     .item(style="position: absolute; top: 0px; left: 484px;")
@@ -47,3 +47,37 @@
 #fd
   .container
     D2D &copy; 2013- DressToCode.com. All rights are reserved.
+
+/ Modal
+.popup_image
+  #popup.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+    .modal-body
+      .image
+        = image_tag('dressy.jpg')
+      .image_des
+        .pull-right(style="width:100%;")
+          %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+        .title About this item
+        .content
+          Dress Code: 
+          %b Casual(Women)
+          %br
+          Style: 
+          %b Contemporary America
+          %br
+          Brand: 
+          %b Gap
+          %br
+          Price: 
+          %b $17
+          %br
+          Available Sizes: 
+          %b varies
+          %br
+          .icon-arrow-right
+          = link_to "Get more info"
+          %br
+          %br
+          .btn.btn-warning
+            Buy it
+

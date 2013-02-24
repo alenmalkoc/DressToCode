@@ -99,3 +99,40 @@ a{
    text-align:center;
    margin:20px 0;
 }
+
+//Popup
+.popup_image{
+   .modal{
+      @include border-radius(0px);
+      width:600px;
+      .image{
+         float:left;
+         width:265px;
+      }
+      .image_des{
+         float:left;
+         width:260px;
+         margin-left:40px;
+         .title{
+            font-size: 20px;
+            color: #858585;
+            font-weight: bold;
+            margin-bottom:10px;
+         }
+         .content{
+            color:#666;
+            font-size:14px;
+            line-height:28px;
+            a{
+               font-size:13px;
+               text-decoration:underline;
+               color:#666;
+            }
+
+            .btn-warning{
+               width: 100px;
+            }
+         }
+      }
+   }
+}
