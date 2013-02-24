@@ -5,51 +5,8 @@
 *{
    margin:0;
    padding:0;
-   border:0;
-   font-size:100%;
-   font:inherit;
-   vertical-align:baseline
 }
 	
-body{
-   line-height:1
-}
-
-ol,ul{
-   list-style:none
-}
-	
-table{
-   border-collapse:collapse;
-   border-spacing:0
-}
-
-.box{
-   border-bottom:1px solid #000;
-}
-
-caption,th,td{
-   text-align:left;
-   font-weight:normal;
-   vertical-align:middle
-}
-
-q,blockquote{
-   quotes:none
-}
-
-q:before,q:after,blockquote:before,blockquote:after{
-   content:"";content:none
-}
-a img{
-   border:none;
-}
-
-article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section,summary
-{
-   display:block
-}
-
 body{
    background-image:url('bg.png');
    font-family:"helvetica neue", sans-serif;
@@ -58,14 +15,15 @@ body{
    padding-top:125px;
 }
 
+//test case
+.box{border:1px solid #000;}
 
-a{color:#369}.text-shadow,#hd .logo ul,#hd 
 
-
-.wrapper{
-   width:960px;
-   margin:0 auto;
-   position:relative
+a{
+   color:#369;
+   img{
+      border:none;
+   }
 }
 
 #hd{
@@ -76,55 +34,44 @@ a{color:#369}.text-shadow,#hd .logo ul,#hd
    left:0;
    width:100%;
    @include box-shadow(0 0 5px rgba(0,0,0,0.7));
-   
-   .logo{
-      padding:7px 0;
-      border-bottom:1px solid rgba(0,0,0,0.2);      
-   }
+   padding-bottom:20px;
 
    .topline{
 	  background:#ea6641;
 	  padding:5px 0;
+      margin-bottom:20px;
+   }
+   
+   input[type="text"]{
+      background:#EBEBEB;
+      height:22px;
+      border:1px solid #949494;      
+      @include border-radius(3px 0px 0px 3px);
+      float:left;
+   }
+   
+   .search{
+      padding:3px;
+      float:left;
+      padding: 5px;
+      text-align:center;
+      width: 20px;
+      @include gradient-vertical(#E0DEDF, #CBCBCB);
+      border:1px solid #949494;
+      border-left:0px;
+      @include border-radius(0px 3px 3px 0px);
+      color:#ccc;
    }
 
-   .logo_menu{
-      float:right;
-      margin-right: -615px;
-      position: absolute;
-      top: 15px;
-      right: 0;
-      ul{
-         font-weight:bold;      
-         li{
-            float:left;
-            padding:15px 27px 0 14px;
-         }
+   .search_for{
+      font-size:13px;
+      color:#898989;
+      padding-top: 7px;
+      input[type="checkbox"]{
+         margin:0 0 0 10px;
       }
    }
- 
-   nav{
-      border-top:1px solid white;
-      ul{
-         text-align:center;
-         padding:10px 0 5px;
-         margin:0px;
-         
-         li{
-            display:inline;
-            margin:0 2px
-         }
 
-         li:after{   
-            content:".";
-            padding-left:7px;
-            color:rgba(0,0,0,0.3)
-         }
-
-         li:last-child:after{
-            content:none;
-         }
-      }
-   }
 }
 
 #masonry{
@@ -140,11 +87,3 @@ a{color:#369}.text-shadow,#hd .logo ul,#hd
    background:#fff;
    @include box-shadow(0 1px 3px rgba(34,25,25,0.4));
 }
-
-.label{
-   color:#8c7e7e;
-   padding:15px;
-   font-weight:normal;
-   background:#fff;
-}
-

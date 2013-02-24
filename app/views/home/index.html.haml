@@ -1,77 +1,58 @@
 %header#hd
   .topline
-  .logo
-    .container(align="center")
-      = image_tag('logo.png')
-      .logo_menu
-        %ul
-          %li Login
-          %li Signup
-          %li Developers
-  %nav
-    .container
-      %ul
-        %li Casual
-        %li Business Casual
-        %li Formal
-        %li browse all
+  .container
+    .row
+      .span5     
+        %input(type="text" placeholder="Search" class="span4")
+        .search
+          .icon-search
+      .span5
+        %input(type="text" placeholder="Search by Dress Code" class="span4")
+        .search
+          .icon-search
+      .span6= image_tag('logo.png')
+      .span8.search_for
+        Search for:
+        = check_box_tag 'accept'
+        Men
+        = check_box_tag 'accept'
+        Women
+        = check_box_tag 'accept'
+        Girls
+        = check_box_tag 'accept'
+        Boys
+        
+
 .container
   #bd
     .container
       #masonry.masonry
         .item
           = image_tag('ball.jpg')         
-          .label Ball Gown
-
         .item
           = image_tag('Beachwear.jpg')
-          .label Beach Wear
-
         .item
           = image_tag('casual.jpg')
-          .label Business Casual
-
         .item
           = image_tag('Businessman.jpg')
-          .label Business Formal
-
         .item
           = image_tag('Dressy.jpg')
-          .label Dressy
-
         .item
           = image_tag('sail.jpg')
-          .label Sail Casual
-
         .item
           = image_tag('kpop.jpg')
-          .label K Pop           
-
         .item
           = image_tag('womenscasual.jpg')
-          .label Women's Casual
-
         .item
           = image_tag('Workout.jpg')
-          .label Sporty / Workout
-
         .item
           = image_tag('ball.jpg')
-          .label Ball Gown
-
         .item
           = image_tag('Businessman.jpg')
-          .label Business Formal
-
         .item
           = image_tag('Dressy.jpg')
-          .label Dress
-
         .item
           = image_tag('Hawaiian.jpg')
-          .label Hawaiian
         .item
           = image_tag('Beachwear.jpg')
-          .label Beach Wear
-
 #tc_container{:data => "fc", :style => "display: none"}
