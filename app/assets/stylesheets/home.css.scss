@@ -74,16 +74,19 @@ a{
 
 }
 
-#masonry{
-   position:relative;
-}
+#bd{
+   background:url("bg.png");
+   #content{
+      position:relative;
+   }
 
-.item{
-	width:220px;
-	float:left;
-	padding:1px 1px 0;
-	margin:0 7px 25px;
-	font-size:12px;
-   background:#fff;
-   @include box-shadow(0 1px 3px rgba(34,25,25,0.4));
+   .item{
+	  width:217px;
+	  float:left;
+	  padding:3px;
+	  margin:0 7px 25px;
+	  font-size:12px;
+      background:#fff;
+      @include box-shadow(0 1px 3px rgba(34,25,25,0.4));
+   }
 }
