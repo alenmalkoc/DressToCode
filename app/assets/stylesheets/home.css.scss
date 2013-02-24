@@ -8,11 +8,11 @@
 }
 	
 body{
-   background-image:url('bg.png');
+   background:#ddd;
    font-family:"helvetica neue", sans-serif;
    font-size:13px;
    color:#444;
-   padding-top:125px;
+   padding-top:90px;
 }
 
 //test case
@@ -76,6 +76,10 @@ a{
 
 #bd{
    background:url("bg.png");
+   height:800px;
+   position:relative;
+   padding-top:40px;
+   border-bottom:1px solid #ccc;
    #content{
       position:relative;
    }
@@ -89,4 +93,9 @@ a{
       background:#fff;
       @include box-shadow(0 1px 3px rgba(34,25,25,0.4));
    }
+}
+
+#fd{
+   text-align:center;
+   margin:20px 0;
 }
