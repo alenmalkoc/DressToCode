@@ -34,4 +34,11 @@ Ui::Application.configure do
 
   # Expands the lines which load the assets
   config.assets.debug = true
+
+  # Default url
+  config.action_mailer.default_url_options = { :host => 'localhost:3000' }
+
+  # only for heroku deployment
+  config.assets.initialize_on_precompile = false
+  
 end
