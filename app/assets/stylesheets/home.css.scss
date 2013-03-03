@@ -61,6 +61,9 @@ a{
       border-left:0px;
       @include border-radius(0px 3px 3px 0px);
       color:#ccc;
+      .icon-search, .icon-caret-down{
+         color:#000;
+      }
    }
 
    .search_for{
