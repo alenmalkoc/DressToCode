@@ -31,5 +31,7 @@ group :test, :development do
   gem 'pry-rails'
   gem "rspec-rails", "~> 2.0"
   gem 'pry-rails'
-  gem 'thin'
 end
+
+gem 'thin'
+
