@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+qsource 'https://rubygems.org'
 
 gem 'rails', '3.2.8'
 
@@ -11,6 +11,8 @@ gem 'rb-readline'
 gem 'devise'
 gem 'activeadmin'
 gem "meta_search",    '>= 1.1.0.pre'
+gem "omniauth"
+gem "omniauth-facebook"
 
 
 gem 'jquery-rails'
