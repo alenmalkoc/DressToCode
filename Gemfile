@@ -38,5 +38,5 @@ end
 gem 'thin'
 
 group :production do
-  gem 'activerecord-postgresql-adapter'
+  gem 'pg', "~> 0.14.1"
 end
