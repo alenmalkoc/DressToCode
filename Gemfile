@@ -26,8 +26,6 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
 end
 
-
-
 group :test, :development do
   gem 'pry'
   gem 'pry-rails'
