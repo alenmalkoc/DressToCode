@@ -17,6 +17,7 @@ gem "omniauth-facebook"
 
 gem 'jquery-rails'
 gem 'haml-rails'
+gem 'newrelic_rpm'
 
 
 group :assets do
