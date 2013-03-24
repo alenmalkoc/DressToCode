@@ -19,7 +19,6 @@ gem 'jquery-rails'
 gem 'haml-rails'
 gem 'newrelic_rpm', "~> 3.5.5.38"
 
-
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'font-awesome-sass-rails'
